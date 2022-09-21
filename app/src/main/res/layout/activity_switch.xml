@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Switch">
+
+    <LinearLayout
+        android:id="@+id/switchTopBar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/white"
+            android:gravity="center"
+            android:onClick="goToHome"
+            android:padding = "10dp"
+            android:src="@drawable/home" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="콘센트 제어"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/plug1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="300dp"
+        android:src="@drawable/plug"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <com.suke.widget.SwitchButton
+        android:id="@+id/sb"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_margin="50dp"
+        android:layout_marginStart="104dp"
+        android:tint="@color/colorAccept"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/plug1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.176"
+        app:sb_background="@color/gray"
+        app:sb_button_color="@color/white"
+        app:sb_checked_color="@color/green"
+        app:sb_checkline_color="@color/green"
+        app:sb_shadow_color="#A36F95"
+        app:sb_uncheck_color="@color/gray"
+        app:sb_uncheckcircle_color="@color/gray" />
+
+    <ImageView
+        android:id="@+id/plug2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="300dp"
+        android:src="@drawable/plug"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4" />
+
+    <com.suke.widget.SwitchButton
+        android:id="@+id/sb2"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_margin="50dp"
+        android:tint="@color/colorAccept"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/plug2"
+        app:layout_constraintVertical_bias="0.39"
+        app:sb_background="@color/gray"
+        app:sb_button_color="@color/white"
+        app:sb_checked_color="@color/green"
+        app:sb_checkline_color="@color/green"
+        app:sb_shadow_color="#A36F95"
+        app:sb_uncheck_color="@color/gray"
+        app:sb_uncheckcircle_color="@color/gray" />
+
+    <ImageView
+        android:id="@+id/plug3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="300dp"
+        android:src="@drawable/plug"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.6" />
+
+    <com.suke.widget.SwitchButton
+        android:id="@+id/sb3"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_margin="50dp"
+        android:tint="@color/colorAccept"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/plug3"
+        app:layout_constraintVertical_bias="0.6"
+        app:sb_background="@color/gray"
+        app:sb_button_color="@color/white"
+        app:sb_checked_color="@color/green"
+        app:sb_checkline_color="@color/green"
+        app:sb_shadow_color="#A36F95"
+        app:sb_uncheck_color="@color/gray"
+        app:sb_uncheckcircle_color="@color/gray" />
+
+    <ImageView
+        android:id="@+id/plug4"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="300dp"
+        android:src="@drawable/plug"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.8" />
+
+    <com.suke.widget.SwitchButton
+        android:id="@+id/sb4"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_margin="50dp"
+        android:tint="@color/colorAccept"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/plug4"
+        app:layout_constraintVertical_bias="0.82"
+        app:sb_background="@color/gray"
+        app:sb_button_color="@color/white"
+        app:sb_checked_color="@color/green"
+        app:sb_checkline_color="@color/green"
+        app:sb_shadow_color="#A36F95"
+        app:sb_uncheck_color="@color/gray"
+        app:sb_uncheckcircle_color="@color/gray" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
